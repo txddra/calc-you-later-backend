@@ -15,6 +15,9 @@ else if(operator==="x") {
   return num * num2 
 
 }
+else if(operator === "/"){
+  return num / num2
+}
 }
 
 
