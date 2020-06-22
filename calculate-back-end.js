@@ -1,6 +1,13 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+function calculate(num, num2, operator){
+  num =Number(num)
+  num2=Number(num2)
+  
+if (operator === '+')
+return num + num2
+}
 
 
  
