@@ -4,13 +4,17 @@
 function calculate(num, num2, operator){
   num =Number(num)
   num2=Number(num2)
-  
-if (operator === '+')
+
+if (operator === '+'){
 return num + num2
+}
+else if(operator ==="-"){
+return num - num2
+}
+
 }
 
 
- 
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
