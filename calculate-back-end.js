@@ -6,12 +6,15 @@ function calculate(num, num2, operator){
   num2=Number(num2)
 
 if (operator === '+'){
-return num + num2
+  return num + num2
 }
 else if(operator ==="-"){
-return num - num2
+  return num - num2
 }
+else if(operator==="x") {
+  return num * num2 
 
+}
 }
 
 
