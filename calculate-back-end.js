@@ -13,14 +13,16 @@ function calculate(num, num2, operator){
 let notDiv = operator !=="/";
 let notMod = operator !=="%";
 let add = operator === "+" || operator === "plus" || operator === "added to";
-let sub = operator ==="-" || operator === "minus" || operator === "subtracted from";
+let sub = operator === "-" || operator === "minus" || operator === "subtracted from";
+let mul = operator === "x" || operator ==="X" || operator === "times" || operator === "multiplied by"
+
 if (add){
   return num + num2;
 }
 else if(sub){
   return num - num2;
 }
-else if(operator==="x") {
+else if(mul) {
   return num * num2;
 
 }
