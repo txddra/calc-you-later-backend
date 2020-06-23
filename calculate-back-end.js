@@ -12,11 +12,12 @@ function calculate(num, num2, operator){
 // let notMul = operator !=="x";
 let notDiv = operator !=="/";
 let notMod = operator !=="%";
-
-if (operator === '+'){
+let add = operator === "+" || operator === "plus" || operator === "added to";
+let sub = operator ==="-" || operator === "minus" || operator === "subtracted from";
+if (add){
   return num + num2;
 }
-else if(operator ==="-"){
+else if(sub){
   return num - num2;
 }
 else if(operator==="x") {
@@ -33,6 +34,7 @@ else if(operator === "%"){
 else if( operator !=="+"|| operator !=="-"|| operator !=="x"||notDiv||notMod){
     return "Sorry, that's not a mathematical operation!"
 }
+
 }
 
 
