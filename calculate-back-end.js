@@ -1,9 +1,17 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+
+
 function calculate(num, num2, operator){
-  num =Number(num)
-  num2=Number(num2)
+  num =Number(num);
+  num2 =Number(num2);
+
+// // let notAdd = operator !=="+";
+// let notSub = operator !=="-";
+// let notMul = operator !=="x";
+let notDiv = operator !=="/";
+let notMod = operator !=="%";
 
 if (operator === '+'){
   return num + num2;
@@ -21,6 +29,9 @@ else if(operator === "/"){
 else if(operator === "%"){
   return num % num2 ;
 
+}
+else if( operator !=="+"|| operator !=="-"|| operator !=="x"||notDiv||notMod){
+    return "Sorry, that's not a mathematical operation!"
 }
 }
 
